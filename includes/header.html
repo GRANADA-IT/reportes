@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
+    <!-- DataTables Buttons CSS -->
+    <link rel="stylesheet" href="css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="css/buttons.dataTables.min.css">
+    <!-- User CSS -->
+    <style>
+        * {
+            font-size: 16px;
+            /*Default 16px*/
+            line-height: 1.5;
+            /*Default 1.5*/
+        }
+    </style>
+
+    <title><?php echo $page_title; ?></title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <!-- Inicio -->
+        <a class="navbar-brand" href="index.php"><i class="fas fa-home"></i></a>
+
+        <!-- Para collapsar menu -->
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links de navegavión-->
+        <div class="collapse navbar-collapse" id="navb">
+            <ul class="navbar-nav mr-auto">
+                <!-- Reporte -->
+                <li class="nav-item">
+                    <a class="nav-link" href="reporte.php">Reporte</a>
+                </li>
+                <!-- Tabla -->
+                <li class="nav-item">
+                    <a class="nav-link" href="tabla.php">Tabla</a>
+                </li>
+                <!-- Ventas -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Ventas
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="ventas.php">Ventas por Producto</a>
+                        <a class="dropdown-item" href="#">Otro</a>
+                    </div>
+                    <!-- Conta -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Conta
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Facturas por Fecha</a>
+                        <a class="dropdown-item" href="#">NC (Manual) por Fecha</a>
+                        <a class="dropdown-item" href="#">NC (Devolucion) por Fecha</a>
+                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Producción</a>
+                </li>
+                </li>
+            </ul>
+            <!-- Search Button
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
+            </form>
+            -->
+        </div>
+    </nav>
