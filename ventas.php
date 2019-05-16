@@ -11,6 +11,7 @@ echo    '<div class="container-fluid">
 // Date functions:
 $fini = strtotime("First day of this month");
 $ffin = strtotime("Today");
+$test = 1;
 
 echo '
 <form formaction="ventas.php" method="post">
